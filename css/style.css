@@ -1,0 +1,389 @@
+/*
+1. Main
+2. Header
+
+4. Main page
+
+
+*/
+
+/* Main */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Bobz; /* Гарнитура шрифта */
+    src: url(/fonts/10423.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Child; /* Гарнитура шрифта */
+    src: url(/fonts/10267.otf); /* Путь к файлу со шрифтом */
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0px auto;
+}
+footer {
+    background-color: #4b4b4b;
+    height: 17vh;
+}
+
+/* Header */
+.header-top {
+    text-transform: uppercase;
+    margin: 3% 0;
+}
+.header-top img{
+    width: 20%;
+}
+nav {
+    background-color: #ffd200;
+    width: 100%;
+    height: 25%;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav ul, .adv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav li {
+    display: inline-block;
+    min-height: 10%;
+    padding: 1%;
+}
+
+/* Main page */
+.ourTeams {
+    background: url("../img/teams-back.png") center ;
+}
+.ourTeams span {
+    padding: 0 15px;
+}
+.ourTeams h2 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffd200;
+    padding: 10px 0px;
+    color: black;
+    margin-left: 35%;
+    width: 32%;
+}
+.teamsList {
+    width: 100%;
+    min-height: 40%;
+    display: inline-block;
+    /*height: 200px;*/
+}
+.liTeams {
+    min-width: 50%;
+    /*height: 20px;*/
+    display: block;
+    float: left;
+    /*border: 1px solid green;*/
+    padding-top: 30%;
+}
+.liTeams p {
+    padding: 20px 10px;
+    margin: 0px;
+    /*background: url("../img/main/baby-back.jpg");*/
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 35px;
+
+}
+.liTeams span {
+   vertical-align: middle;
+
+}
+.liTeams a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-family: Arial;
+    font-size: 20px;
+}
+.liTeams img {
+    margin-top: -10px;
+    width: 36px;
+    height: 48px;
+    float: right;
+}
+#team-1 {
+    background: url("../img/main/baby-2.jpg") center no-repeat;
+    background-size: cover;
+}
+#team-2 {
+    background: url("../img/main/junior.jpg") center no-repeat;
+    background-size: cover;
+}
+#team-3 {
+    background: url("../img/main/cheers.jpg") center no-repeat;
+}
+#team-4 {
+    background: url("../img/main/hiphop.jpg") center no-repeat;
+}
+
+.slide {
+    background: url("../img/mainback.png") center no-repeat;
+    min-height: 475px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.slide p {
+    font-family: Child;
+    font-size: 22px;
+}
+
+.slide a {
+
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    border: 1px solid #ffd200;
+    padding: 10px 15px;
+    background-color: #ffd200;
+}
+h2 {
+    text-align: center;
+    background-color: #ffd200;
+    color: black;
+    padding: 15px 0;
+}
+.h2span {
+    padding: 0 25px;
+}
+.adv img {
+    float: left;
+    padding-right: 40px;
+}
+.adv li {
+    min-height: 100px;
+
+}
+.adv p {
+    padding: 2% 0 0;
+    text-align: justify;
+    font-size: 18px;
+}
+.coaches {
+    background-image: url("../img/coache-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 400px;
+}
+.coaches img{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 70px;
+}
+#coach-1, #coach-2 {
+    margin-top: 15px;
+    display: block;
+}
+
+#coach-1 {
+    float: left;
+    width: 30%;
+    margin-right: 20%;
+
+}
+#coach-1 p {
+
+}
+#coach-1 img  {
+    margin-left: 25%;
+}
+#coach-1 p {
+    padding-left: 18%;
+  }
+#coach-2 {
+    float: right;
+    width: 50%;
+}
+#coach-2 p {
+    padding-left: 37.5%;
+}
+#coach-2 img {
+    margin-left: 50%;
+}
+#coach-1 a, #coach-2 a {
+    font-family: Bobz;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+#coach-1 a:hover, #coach-2 a:hover {
+    color: #ffd200;
+}
+.post-news {
+    background-color: white;
+    color: black;
+}
+.post-news h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+}
+.li-post {
+    padding: 10% 10%;
+    float: left;
+
+    width: 20%;
+}
+
+/****** BOTTOM SOCIAL BLOCK  ********/
+#bottom {
+    height: 81vh;
+    display: block;
+}
+.social-icons {
+    background: black;
+    color: white;
+    height: 7vh;
+}
+#social-title {
+    font-family: Child;
+    text-transform: uppercase;
+    float: left;
+    font-size: 25px;
+    margin: 0;
+}
+.social-list  {
+    margin: 3vh 0;
+    padding: 0;
+}
+.social-list li{
+    display: inline;
+    padding-right: 2%;
+}
+.social-list a, .social-list a:visited{
+    text-decoration: none;
+    color: white;
+    vertical-align: top;
+    font-size: 16px;
+}
+.social-list a:hover{
+    text-decoration: underline;
+}
+.icon {
+    height: 8vh;
+    width: 8vh;
+    margin-top: -2vh;
+    padding-right: 1%;
+}
+
+#bottom-form img{
+    height: 45vh;
+    float: left;
+    padding: 0 15vh;
+}
+#bottom-post{
+
+    margin: 0 10% 0 50%;
+    padding-top: 10vh;
+
+}
+#bottom-form p {
+    background: rgba(168, 168, 168, 0.7);
+    padding: 2vh;
+    height: 20vh;
+}
+
+
+
+
+
+
+
+.subscribe {
+    padding: 3vh 0 0;
+    height: 32vh;
+}
+.subscribe__title {
+    color: #fff;
+    font-family: PT Sans Caption,Arial,sans-serif;
+    font-size: 4.5vh;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.subscribe-form {
+    text-align: center;
+    margin: 2vh auto 1vh;
+    max-width: 890px;
+}
+.subscribe-form__field {
+    border: 2px solid hsla(0,0%,100%,.75);
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    font-family: PT Sans,Arial,sans-serif;
+    padding: 0 14px;
+    outline: 0;
+    margin: 0 24px 0 0;
+    height: 52px;
+    width: 525px;
+    -webkit-transition: border-color .35s ease;
+    transition: border-color .35s ease;
+}
+.subscribe-form__btn {
+    padding: 0;
+    text-align: justify;
+    height: 56px;
+    width: 260px;
+}
+
+.btn {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: PT Sans,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    letter-spacing: 2.5px;
+    background-color: #d92f44;
+    border: 0;
+    outline: none;
+}
+
+
+
+/* Footer */
+.footer-info {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+}
+.footer-info div {
+    float: left;
+    width: 25%;
+}
+.footer-info ul {
+    margin: 0px;
+    font-size: 14px;
+    list-style-type: none;
+}
+.footer-info ul>li:first-child {
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
