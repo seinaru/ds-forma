@@ -29,7 +29,7 @@ body {
 }
 footer {
     background-color: #4b4b4b;
-    height: 17vh;
+    height: 19vh;
 }
 
 /* Header */
@@ -61,26 +61,74 @@ nav li {
 }
 
 /* Main page */
-.ourTeams {
-    background: url("../img/teams-back.png") center ;
+
+/*    form of record      */
+.record-form-img {
+    padding-top: 10vh;
+
 }
-.ourTeams span {
-    padding: 0 15px;
+.record-form {
+    height: 100vh;
+    background: url("/img/main/form-back.png") white;
+    background-size: 100% 100%;
+
 }
-.ourTeams h2 {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #ffd200;
-    padding: 10px 0px;
+.record-form input {
     color: black;
-    margin-left: 35%;
-    width: 32%;
+    margin: 1vh 0;
 }
+.record-form form {
+    padding-top: 25vh;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+}
+.submit-button {
+    background-color: #ffd200;
+    border: none;
+    height: 8vh;
+    margin-top: 4vh;
+    font-family: Child;
+    text-transform: uppercase;
+}
+
+
+
+
+/*  Info-block   */
+.info-container {
+    background: url("/img/main/info-back.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+.ourTeams {
+
+}
+
 .teamsList {
     width: 100%;
     min-height: 40%;
     display: inline-block;
     /*height: 200px;*/
+}
+.teamsList div {
+    height: 50vh;
+
+    display: inline-block;
+    padding: 0;
+}
+.content-2-in-row {
+    width: 49%;
+}
+.content-3-in-row {
+    width: 33%;
+}
+
+
+.sm-pad {
+    margin-right: 1%;
 }
 .liTeams {
     min-width: 50%;
@@ -124,10 +172,16 @@ nav li {
     background-size: cover;
 }
 #team-3 {
+    background: url("../img/main/junior-cheers.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#team-4 {
     background: url("../img/main/cheers.jpg") center no-repeat;
 }
-#team-4 {
+#team-5 {
     background: url("../img/main/hiphop.jpg") center no-repeat;
+    width: 49.4%;
 }
 
 .slide {
@@ -223,6 +277,22 @@ h2 {
 #coach-1 a:hover, #coach-2 a:hover {
     color: #ffd200;
 }
+
+/*************  cheers-UA  ***********/
+.cheers-UA {
+    background: url("/img/main/federation.png");
+    background-size: cover;
+    height: 75vh;
+}
+.cheers-UA img {
+    padding: 5vh;
+}
+.cheers-UA div {
+    padding-top: 15vh;
+}
+
+
+
 .post-news {
     background-color: white;
     color: black;
@@ -238,6 +308,48 @@ h2 {
 
     width: 20%;
 }
+/******     SPONSORS          *******/
+.sponsors {
+  /*  background: url("/img/main/sponsors.png") center no-repeat;
+    background-size: contain;*/
+}
+.sponsors a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 2vh 5vh 2vh 10vh;
+    background: url("/img/main/sponsors.png") center no-repeat;
+    background-size: contain;
+    font-weight: 800;
+}
+.sponsors a:hover {
+    color: #ffd200;
+    background: url("/img/main/sponsors-hover.png") center no-repeat;
+    background-size: contain;
+}
+
+
+/******     GALLERY           *******/
+.gallery img{
+    padding: 1vh;
+}
+/****** CONTACTS BLOCK **************/
+.contacts {
+    background-color: white;
+    height: 100vh;
+}
+.map-block {
+    height: 80vh;
+}
+.contacts-content {
+    background: url("/img/main/contacts-back.png") center no-repeat;
+    background-size: contain;
+    height: 80vh;
+    padding-top: 15vh;
+    color: black;
+    font-size: larger;
+}
+
 
 /****** BOTTOM SOCIAL BLOCK  ********/
 #bottom {
@@ -275,27 +387,54 @@ h2 {
 }
 .icon {
     height: 8vh;
-    width: 8vh;
     margin-top: -2vh;
     padding-right: 1%;
 }
 
 #bottom-form img{
     height: 45vh;
-    float: left;
-    padding: 0 15vh;
+    padding: 0;
+
+
 }
 #bottom-post{
 
-    margin: 0 10% 0 50%;
-    padding-top: 10vh;
+}
+#post-content {
+    margin-top: 7%;
+    background: black;
+    padding: 8vh;
+    border: solid #ffd200 4px;
+    border-radius: 10px;
+    text-align: justify;
 
 }
-#bottom-form p {
-    background: rgba(168, 168, 168, 0.7);
+#post-content a {
+    border: solid #ffd200 4px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 2vh;
+    background: black;
+    top: 10vh;
+    position: relative;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+#post-content a:hover {
+    background: #ffd200;
+    color: black;
+    font-weight: 900;
+}
+/* #bottom-form p {*/
+   /* background: rgba(168, 168, 168, 0.7);
     padding: 2vh;
     height: 20vh;
-}
+    color: white;
+    text-align: justify;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}*/
 
 
 
@@ -305,7 +444,7 @@ h2 {
 
 .subscribe {
     padding: 3vh 0 0;
-    height: 32vh;
+    height: 30vh;
 }
 .subscribe__title {
     color: #fff;

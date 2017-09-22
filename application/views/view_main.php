@@ -6,44 +6,60 @@
             <p>Будь черлидером!</p>
         </div>
 
-        <a href="/">подробнее  </a>
+        <a href="#record-form">подробнее  </a>
     </div>
 </div>
-<div class="ourTeams">
-    <h2><span>&#9733;</span>Наши черлидеры<span>&#9733;</span></h2>
-</div>
-<div class="wrapper">
-    <div class="teamsList">
-        <div class="liTeams" id="team-1">
-            <p><a href="/"><span>Baby group</span><img src="../../img/main/arrow_go.jpg" width="36" height="48"></a> </p>
-        </div>
-        <div class="liTeams" id="team-2">
-            <p><a href="/"><span>Junior group</span><img src="../../img/main/arrow_go.jpg" width="36" height="48"></a> </p>
-        </div>
-        <div class="liTeams" id="team-3">
-            <p><a href="/"><span>Cheers group</span><img src="../../img/main/arrow_go.jpg" width="36" height="48"></a> </p>
-        </div>
-        <div class="liTeams" id="team-4">
-            <p><a href="/"><span>Hip-Hop group</span><img src="../../img/main/arrow_go.jpg" width="36" height="48"></a> </p>
-        </div>
-    </div>
-</div>
+<div class="record-form" id="record-form">
 
-<div style="display: block;"><h2><span class="h2span">&#9733;</span> ПОЧЕМУ МЫ НАЙДЕМ ОБЩИЙ ЯЗЫК? <span class="h2span">&#9733;</span></h2></div>
-<div class="wrapper">
-    <div class="adv">
+    <div class="col-lg-8 container record-form-img">
+        <img class="col-lg-11" src="/img/main/form-1.png">
+    </div>
+    <form class="col-lg-4 container" method="post">
+        <div class="col-lg-12">Введите имя ребенка:</div>
+        <div class="col-lg-1"></div>
+        <input class="col-lg-11" type="text" name="name" placeholder="Имя ребенка">
+        <div class="col-lg-12">Введите возраст ребенка:</div>
+
+        <div class="col-lg-1"></div>
+        <input class="col-lg-11" type="text" name="age" placeholder="Возраст">
+        <div class="col-lg-12">Введите контактный телефон:</div>
+        <div class="col-lg-1"></div>
+        <input class="col-lg-11" style="margin-bottom: 5vh" type="text" name="phone" placeholder="+38 (077) 123 45 78">
+        <div class="col-lg-6" style="height: 13vh;"></div>
+        <input type="submit" class="col-lg-5 submit-button" value="записаться">
+    </form>
+</div>
+<div class=" info-container">
+    <div class="wrapper ">
+        <div class="col-lg-4 container">
+            <h2>Добро пожаловать в Dance studio "Forma"</h2>
+            <div class="">
+                Самый большой и комфортный зал для тренировок,
+                профессиональный коллектив тренеров и хореографов,
+                индивидуальный подход к каждому ребёнку - залог
+                максимально полного и комплексного развития
+                физических способностей, пластики и гибкости тела,
+                мышечной памяти, а также координации движений!
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class=" container col-lg-12">
+    <div class="adv wrapper">
+        <h2><span class="h2span">&#9733;</span>Что в итоге Ваш ребенок получит от занятий?<span class="h2span">&#9733;</span></h2>
 
         <ul>
             <li>
                 <img src="/img/adv-11.jpg">
                 <p>Cомневаешься, что у тебя получится? У тебя точно получится!
-                Все наши занятия создаются с ориентиром на дитей с любым уровнем спортивной подготовки,
-                и мы полностью за приятное времяпрепровождение!</p>
+                    Все наши занятия создаются с ориентиром на дитей с любым уровнем спортивной подготовки,
+                    и мы полностью за приятное времяпрепровождение!</p>
             </li>
             <li>
                 <img src="/img/adv-12.jpg">
                 <p>С тобой всегда рядом такие же энтузиасты — ты становишься частью сообщества
-                и приобретаешь новых друзей (и да, это возможно в любом возрасте)</p>
+                    и приобретаешь новых друзей (и да, это возможно в любом возрасте)</p>
             </li>
             <li>
                 <img src="/img/adv-13.jpg">
@@ -53,12 +69,12 @@
             <li>
                 <img src="/img/adv-14.jpg">
                 <p>Мы — клуб для тех, кому интересно освоить новые виды спорта.
-                Вы не просто пробуете, а именно осваиваете, узнаете спорт изнутри.</p>
+                    Вы не просто пробуете, а именно осваиваете, узнаете спорт изнутри.</p>
             </li>
             <li>
                 <img src="/img/adv-5.jpg">
                 <p>Можно не останавливаться на одном, продолжи осваивать новые виды танцев.
-                В нашем клубе мы всегда экспериментируем и вскоре создаим в новые интересные группы!</p>
+                    В нашем клубе мы всегда экспериментируем и вскоре создаим в новые интересные группы!</p>
             </li>
 
         </ul>
@@ -66,6 +82,39 @@
     </div>
 </div>
 
+
+
+
+<div class="ourTeams container col-lg-12">
+    <h2><span>&#9733;</span>В каком возрасте можно заниматься чирлидингом?<span>&#9733;</span></h2>
+</div>
+
+<div class="wrapper">
+    <div class="teamsList container">
+        <div class="content-3-in-row" id="team-1"></div>
+        <div class="content-3-in-row" id="team-2"></div>
+        <div class="content-3-in-row " id="team-3"></div>
+        <div class="content-2-in-row sm-pad " id="team-4"></div>
+        <div class="content-2-in-row" id="team-5"></div>
+
+        <!--<div class="liTeams" id="team-11">
+            <p><a href="/"><span>Baby group</span><img src="../../img/main/arrow_go.jpg" width="36" height="48"></a> </p>
+        </div>
+        <div class="liTeams" id="team-21">
+            <p><a href="/"><span>Junior group</span><img src="../../img/main/arrow_go.jpg" width="36" height="48"></a> </p>
+        </div>
+        <div class="liTeams" id="team-3">
+            <p><a href="/"><span>Cheers group</span><img src="../../img/main/arrow_go.jpg" width="36" height="48"></a> </p>
+        </div>
+        <div class="liTeams" id="team-4">
+            <p><a href="/"><span>Hip-Hop group</span><img src="../../img/main/arrow_go.jpg" width="36" height="48"></a> </p>
+        </div>-->
+    </div>
+</div>
+
+<div style="display: block;"><h2><span class="h2span">&#9733;</span> ПОЧЕМУ МЫ НАЙДЕМ ОБЩИЙ ЯЗЫК? <span class="h2span">&#9733;</span></h2></div>
+
+<!--                 переделать           -->
 <div class="coaches">
     <hr>
     <div id="coach-1">
@@ -85,20 +134,78 @@
         </a>
     </div>
 </div>
-<div class="post-news">
-    <h3>
-        О НАС ПИШУТ, ГОВОРЯТ И ПОКАЗЫВАЮТ
-    </h3>
-    <div class="wrapper">
-        <div style="display: inline-block">
-            <div class="li-post">
-                <a href="/"><img src="../../img/main/facebook-3.svg" width="100"></a>
-            </div>
-        </div>
 
+
+
+<div class="cheers-UA">
+    <img class="col-lg-4" src="/img/main/logo_aucf__bez_fona-350x350.png">
+    <div class="col-lg-6">
+
+        <p>
+            Мы – официальная школа Всеукраинской федерации черлидинга, имеющей статус Национальной спортивной федерации.
+        </p>
+        <p>Наши спортсмены имеют право выступать на Чемпионатах и Кубках Украины, входить в состав юниорской, молодёжной
+            и Национальной сборных Украины по черлидингу, представлять страну на Олимпийских играх, чемпионатах мира и
+            Европы, получать разряды и звания.
+        </p>
+
+        <p>Являясь официальным видом спорта, актуальность черлидинга на сегодняшний день определяется его разнообразием.
+            В нём собраны элементы хореографии, акробатики, гимнастики и танцевальных направлений. Соревнования по
+            черлидингу собирают миллионные телеаудитории и десятки тысяч зрителей на трибунах. С каждым днем
+            популярность этого вида спорта растет и набирает обороты.
+        </p>
+    </div>
+</div>
+
+<div style="height: 40vh; background: #08e185;">
+    <h2>dostizheniya</h2>
+</div>
+
+<div class="sponsors">
+    <div class="container">
+        <a href="/" class="col-lg-4">Спонсорам</a>
+
+        <a href="/" class="col-lg-4">Тренерам</a>
+
+        <a href="/" class="col-lg-4">Школам</a>
     </div>
 
 </div>
+
+<div class="gallery">
+    <h2>Галерея</h2>
+    <div class="container">
+        <img src="/img/main/gallery/1.jpg" class="col-lg-4">
+        <img src="/img/main/gallery/2.jpg" class="col-lg-4">
+        <img src="/img/main/gallery/3.jpg" class="col-lg-4">
+        <img src="/img/main/gallery/4.jpg" class="col-lg-4">
+        <img src="/img/main/gallery/5.jpg" class="col-lg-4">
+        <img src="/img/main/gallery/6.jpg" class="col-lg-4">
+        <img src="/img/main/gallery/7.jpg" class="col-lg-4">
+        <img src="/img/main/gallery/8.jpg" class="col-lg-4">
+        <img src="/img/main/gallery/9.jpg" class="col-lg-4">
+    </div>
+</div>
+<div class="contacts">
+    <div class="container">
+        <h2  class="col-lg-12" ><span class="h2span">&#9733;</span>Наши контакты<span class="h2span">&#9733;</span></h2>
+        <div class="col-lg-7 container map-block">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2513.7023746853356!2d28.63378741079048!3d50.94771700234065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x472bdb0daaff71cd%3A0xbc6f7bf3ac7a32da!2zRGFuY2Ugc3R1ZGlvICJGT1JNQSIsINCy0YPQu9C40YbRjyDQqNC-0LvQvtC8LdCQ0LvQtdC50YXQtdC80LAsIDEz0JAsINCa0L7RgNC-0YHRgtC10L3RjCwg0JbQuNGC0L7QvNC40YDRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMTE1MDA!3m2!1d50.947714999999995!2d28.635092!5e0!3m2!1sru!2sua!4v1506094310120"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-5 container contacts-content">
+
+            <div class="col-lg-11">Адресс: <br><b>Улица Шолом-Алейхема, 13А, Коростень, Житомирская область</b></div>
+
+            <div class="col-lg-11">Телефон: <br><b>+38 (096) 700 65 25</b></div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
 <div id="bottom" >
     <div class="social-icons" >
         <div class="wrapper">
@@ -120,7 +227,7 @@
 
                 </li>
                 <li>
-                    <a href="http://www.youtube.com/" target="_blank" title="Мы в YouTube">
+                    <a href="https://www.youtube.com/channel/UCS-7xgPZyjlgYhd5fDiWuQQ" target="_blank" title="Мы в YouTube">
                         <img class="icon" src="/img/main/youtube-3-xxl.png">DS-Forma on YouTube
                     </a>
                 </li>
@@ -134,21 +241,25 @@
         </div>
     </div>
     <div style="height: 45vh; background: white; ">
-        <div class="wrapper">
+
             <div id="bottom-form">
-                <img src="/img/main/bottom.png">
-                <div id="bottom-post">
-                    <p >Уже после первого месяца тренировок Вы поймете, что нашли то самое
-                    увлекательное занятие для Вашего ребенка.
-                        <br>
-                        <br>
-                        <a href="/" style="background: yellow; margin-top: 8vh; padding: 1vh; border: 1px solid black; text-align: center;">Записаться на занятие</a>
-                    </p>
+                <img class="col-lg-6" src="/img/IMG_2000.jpg">
+                <div class="col-lg-6 container" id="bottom-post">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8" id="post-content">
+                            Уже после первого месяца тренировок Вы поймете, что нашли то самое
+                            увлекательное занятие для Вашего ребенка.
+                            <br>
+                                <a href="/" >Записаться на занятие</a>
+                        </div>
+
+
+
 
                 </div>
             </div>
 
-        </div>
+
     </div>
     <div class="wrapper">
         <section class="subscribe">

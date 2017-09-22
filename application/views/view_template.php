@@ -3,8 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title><?php Model::getTitle(); ?></title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+
 	<script type="text/javascript" src="/js/js.js"></script>
 
 
