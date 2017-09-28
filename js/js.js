@@ -1,17 +1,17 @@
 /**
  * Created by UncleDead on 16.09.2017.
  */
- window.onload = function() {
+function changeUps() {
 
-     $("#coach-1").hover(
-         function(){
-             $("#coach-1-1").css('display', 'none');
-             $("#coach-1-2").css('display', 'block');
-         },
-         function(){
-             $("#coach-1-2").css('display', 'none');
-             $("#coach-1-1").css('display', 'block');
-         });
+    $("#coach-1").hover(
+        function(){
+            $("#coach-1-1").css('display', 'none');
+            $("#coach-1-2").css('display', 'block');
+        },
+        function(){
+            $("#coach-1-2").css('display', 'none');
+            $("#coach-1-1").css('display', 'block');
+        });
 
     $("#coach-2").hover(
         function(){
@@ -23,10 +23,11 @@
             $("#coach-2-1").css('display', 'block');
         });
 
-            /* PARALAX SCROLLING */
+    /* PARALAX SCROLLING */
 
-};
-    $("#cover-text").on("click","a", function (event) {
+}
+function scrolling() {
+    $(".cover-text").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
@@ -42,21 +43,23 @@
 
 
     });
+}
+
 
 
 
 
 /*window.onload = function() {
-    var img = document.getElementById('coach-2-1');
+ var img = document.getElementById('coach-2-1');
 
-    img.onmouseout = function () {
-        this.src = '/img/coach-2.png';
-    };
+ img.onmouseout = function () {
+ this.src = '/img/coach-2.png';
+ };
 
-    img.onmouseover = function () {
-        this.src = '/img/coach-2_1.png';
-    };
+ img.onmouseover = function () {
+ this.src = '/img/coach-2_1.png';
+ };
 
 
 
-};*/
+ };*/

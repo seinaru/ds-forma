@@ -31,6 +31,11 @@ footer {
     background-color: #4b4b4b;
     height: 19vh;
 }
+.fullscreen {
+    width: 100vw;
+    padding: 0;
+}
+.container {}
 
 /* Header */
 .header-top {
@@ -69,7 +74,7 @@ nav li {
 }
 .record-form {
     height: 100vh;
-    background: url("/img/main/form-back.png") white;
+    background: url("/img/main/form-back.png") center no-repeat white;
     background-size: 100% 100%;
 
 }
@@ -89,9 +94,20 @@ nav li {
     margin-top: 4vh;
     font-family: Child;
     text-transform: uppercase;
+    float: right;
+
 }
 
-
+@media screen and (max-width: 1100px) {
+    .submit-button {
+        font-size: 14px;
+        border: 4px solid black;
+        float: left;
+    }
+    .record-form input {
+        height: 8vh;
+}
+}
 
 
 /*  Info-block   */
@@ -99,6 +115,11 @@ nav li {
     background: url("/img/main/info-back.png");
     background-size: cover;
     height: 100vh;
+}
+@media screen and (max-width: 1100px) {
+    .info-container p{
+        font-size: 16px;
+    }
 }
 
 
@@ -226,47 +247,28 @@ h2 {
     text-align: justify;
     font-size: 18px;
 }
+
+/********** Coaches   ***************/
 .coaches {
-    background-image: url("../img/coache-banner.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/coache-banner.png") no-repeat top;
     background-size: contain;
     height: 400px;
+    padding: 0;
 }
+
 .coaches img{
     background-color: white;
     border: 1px solid white;
-    border-radius: 70px;
+    border-radius: 1600px;
+    padding: 0px;
+    margin-top: 10px;
 }
 #coach-1, #coach-2 {
-    margin-top: 15px;
-    display: block;
-}
-
-#coach-1 {
-    float: left;
-    width: 30%;
-    margin-right: 20%;
+    padding: 0;
 
 }
-#coach-1 p {
-
-}
-#coach-1 img  {
-    margin-left: 25%;
-}
-#coach-1 p {
-    padding-left: 18%;
-  }
-#coach-2 {
-    float: right;
-    width: 50%;
-}
-#coach-2 p {
-    padding-left: 37.5%;
-}
-#coach-2 img {
-    margin-left: 50%;
+.coaches p{
+    text-align: center;
 }
 #coach-1 a, #coach-2 a {
     font-family: Bobz;
@@ -277,18 +279,28 @@ h2 {
 #coach-1 a:hover, #coach-2 a:hover {
     color: #ffd200;
 }
+.coach-status {
+    font-family: Arial;
+    font-size: 14px;
+    text-align: justify;
+}
 
 /*************  cheers-UA  ***********/
 .cheers-UA {
     background: url("/img/main/federation.png");
     background-size: cover;
-    height: 75vh;
+    min-height: 75vh;
 }
 .cheers-UA img {
     padding: 5vh;
 }
 .cheers-UA div {
     padding-top: 15vh;
+}
+@media screen and (max-width: 1100px) {
+    .cheers-UA p{
+        font-size: 16px;
+    }
 }
 
 
@@ -327,11 +339,56 @@ h2 {
     background: url("/img/main/sponsors-hover.png") center no-repeat;
     background-size: contain;
 }
+/*********** Achievements   **************/
+.achievements-block {
+    background: url("/img/480424.jpg") center no-repeat;
+    background-size: cover;
+}
+.achievements-block-back {
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: -20px;
+}
+.achievements-block img{
+    margin: 5vh 0;
+}
+.achievements {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Child;
+    color: white;
+    font-size: 18px;
+    padding: 5vh;
+}
+.achiev-border {
+    border: 2px solid white;
+    border-radius: 50px;
 
+    text-align: center;
+    padding: 4vh;
+    width: 28%;
+    margin-left: 35%;
+}
+@media screen and (max-width: 1100px) {
+    .achiev-border{
+        border: none;
+    }
+}
+/********* SPONSORS       **********/
+.sponsors a {
+    margin-top: 3vh;
+}
+@media screen and (max-width: 1100px) {
+    .sponsors a{
+
+        padding: 5vh;
+        background-position: center;
+    }
+}
 
 /******     GALLERY           *******/
-.gallery img{
-    padding: 1vh;
+.gallery {
+    min-height: 100vh;
+    width: 100vw;
 }
 /****** CONTACTS BLOCK **************/
 .contacts {
@@ -400,6 +457,21 @@ h2 {
 #bottom-post{
 
 }
+@media screen and (max-width: 1100px) {
+
+    .social-list a, .social-list a:visited{
+
+        font-size: 14px;
+    }
+    .icon {
+        height: 4vh;
+    }
+    #social-title {
+        font-size: 18px;
+    }
+}
+
+/********  POST - CONTENT    *******/
 #post-content {
     margin-top: 7%;
     background: black;
@@ -408,6 +480,11 @@ h2 {
     border-radius: 10px;
     text-align: justify;
 
+}
+@media screen and (max-width: 1100px) {
+    #post-content{
+        margin-top: 3%;
+    }
 }
 #post-content a {
     border: solid #ffd200 4px;
@@ -444,16 +521,17 @@ h2 {
 
 .subscribe {
     padding: 3vh 0 0;
-    height: 30vh;
+    height: 25vh;
 }
 .subscribe__title {
     color: #fff;
     font-family: PT Sans Caption,Arial,sans-serif;
-    font-size: 4.5vh;
+    font-size: 25px;
     font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
     margin: 0;
+    text-align: center;
 }
 .subscribe-form {
     text-align: center;
