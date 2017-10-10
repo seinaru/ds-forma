@@ -3,7 +3,20 @@
 2. Header
 
 4. Main page
-
+4.1. main-heandler
+4.2. form of record
+4.3. Info-block
+4.4. benefits
+4.5. ourTeams
+4.6. Coaches
+4.7. cheers-UA
+4.8. Achievements
+4.9. SPONSORS
+4.10. GALLERY
+4.11. CONTACTS BLOCK
+4.12. BOTTOM SOCIAL BLOCK
+4.13. POST - CONTENT
+4.14.
 
 */
 
@@ -29,7 +42,8 @@ body {
 }
 footer {
     background-color: #4b4b4b;
-    height: 19vh;
+    min-height: 19vh;
+    height: 100%;
 }
 .fullscreen {
     width: 100vw;
@@ -65,9 +79,76 @@ nav li {
     padding: 1%;
 }
 
-/* Main page */
+.mobileVersion {
+    display: none;
+}
+nav a {
+    font-size: 24px;
+}
 
-/*    form of record      */
+nav a, nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+nav a:hover {
+    color: black;
+}
+h2 {
+    text-align: center;
+    background-color: #ffd200;
+    color: black;
+    padding: 15px 0;
+}
+@media screen and (max-width: 1100px) {
+    nav a {
+        font-size: 20px;
+    }
+    .fullVersion {
+        display: none;
+    }
+    .mobileVersion {
+        display: flex;
+    }
+    .black-back-mobile {
+        background: rgba(0,0,0,0.6);
+    }
+}
+
+/* Main page */
+/**************** main-heandler   ****************/
+
+
+.slide {
+    background: url("../img/mainback.png") center no-repeat;
+    min-height: 475px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.slide p {
+    font-family: Child;
+    font-size: 22px;
+}
+
+.slide a {
+
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    border: 1px solid #ffd200;
+    padding: 10px 15px;
+    background-color: #ffd200;
+}
+.main-heandler div>div {
+    padding: 10% 0;
+}
+@media screen and (max-width: 1100px) {
+    .main-heandler a {
+        font-size: 25px;
+    }
+}
+
+/**************    form of record      *************/
+
 .record-form-img {
     padding-top: 10vh;
 
@@ -100,137 +181,57 @@ nav li {
 
 @media screen and (max-width: 1100px) {
     .submit-button {
-        font-size: 14px;
+        font-size: 24px;
         border: 4px solid black;
         float: left;
     }
     .record-form input {
         height: 8vh;
-}
+        font-size: 24px;
+    }
+    #form-container {
+        background: black;
+        margin: 25px 0;
+        padding-top: 5vh;
+    }
+    .record-form {
+        height: auto;
+        position: relative;
+        font-size: 24px;
+        background: url("/img/main/form-back-mobile.png") center no-repeat white;
+        background-size: 100% 100%;
+    }
+    .record-form-img, .record-form-img img {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 
-/*  Info-block   */
+/*****************  Info-block   ***************/
+
 .info-container {
-    background: url("/img/main/info-back.png");
+    background: url("/img/main/info-back.png") right top;
     background-size: cover;
     height: 100vh;
 }
+.black-back {
+    background: rgba(0,0,0,0.6);
+}
 @media screen and (max-width: 1100px) {
     .info-container p{
-        font-size: 16px;
+        font-size: 24px;
+        text-align: justify;
+
+    }
+    .info-container {
+        height: auto;
     }
 }
 
+/************ benefits **********/
 
-
-.ourTeams {
-
-}
-
-.teamsList {
-    width: 100%;
-    min-height: 40%;
-    display: inline-block;
-    /*height: 200px;*/
-}
-.teamsList div {
-    height: 50vh;
-
-    display: inline-block;
-    padding: 0;
-}
-.content-2-in-row {
-    width: 49%;
-}
-.content-3-in-row {
-    width: 33%;
-}
-
-
-.sm-pad {
-    margin-right: 1%;
-}
-.liTeams {
-    min-width: 50%;
-    /*height: 20px;*/
-    display: block;
-    float: left;
-    /*border: 1px solid green;*/
-    padding-top: 30%;
-}
-.liTeams p {
-    padding: 20px 10px;
-    margin: 0px;
-    /*background: url("../img/main/baby-back.jpg");*/
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 35px;
-
-}
-.liTeams span {
-   vertical-align: middle;
-
-}
-.liTeams a {
-    text-decoration: none;
-    color: white;
-    font-weight: 800;
-    font-family: Arial;
-    font-size: 20px;
-}
-.liTeams img {
-    margin-top: -10px;
-    width: 36px;
-    height: 48px;
-    float: right;
-}
-#team-1 {
-    background: url("../img/main/baby-2.jpg") center no-repeat;
-    background-size: cover;
-}
-#team-2 {
-    background: url("../img/main/junior.jpg") center no-repeat;
-    background-size: cover;
-}
-#team-3 {
-    background: url("../img/main/junior-cheers.jpg") center no-repeat;
-    background-size: cover;
-}
-
-#team-4 {
-    background: url("../img/main/cheers.jpg") center no-repeat;
-}
-#team-5 {
-    background: url("../img/main/hiphop.jpg") center no-repeat;
-    width: 49.4%;
-}
-
-.slide {
-    background: url("../img/mainback.png") center no-repeat;
-    min-height: 475px;
-    text-align: center;
-    text-transform: uppercase;
-}
-.slide p {
-    font-family: Child;
-    font-size: 22px;
-}
-
-.slide a {
-
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
-    border: 1px solid #ffd200;
-    padding: 10px 15px;
-    background-color: #ffd200;
-}
-h2 {
-    text-align: center;
-    background-color: #ffd200;
-    color: black;
-    padding: 15px 0;
-}
 .h2span {
     padding: 0 25px;
 }
@@ -248,11 +249,97 @@ h2 {
     font-size: 18px;
 }
 
+@media screen and (max-width: 1100px) {
+    .adv p {
+        font-size: 20px;
+    }
+}
+
+/************* ourTeams ************/
+
+
+.ourTeams {
+
+}
+
+.teamsList {
+    width: 100%;
+    min-height: 40%;
+    display: inline-block;
+
+    /*height: 200px;*/
+}
+.teamsList div {
+    height: 330px;
+
+    display: inline-block;
+    padding: 0;
+
+}
+
+#baby-group {
+    background: url("/img/main/baby-2.jpg") bottom no-repeat;
+    background-size: 100% 100%;
+}
+#junior-group {
+    background: url("/img/main/junior.jpg") center no-repeat;
+    background-size: cover;
+}
+#middle-group {
+    background: url("/img/main/junior-cheers.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#star-group {
+    background: url("/img/main/cheers.jpg") center no-repeat;
+}
+#cheer-ladies {
+    background: url("/img/main/hiphop.jpg") center no-repeat;
+    background-size: cover;
+}
+#cheer-group {
+    background: url("/img/main/Cheerleading-Slide-Leagues.jpg") center no-repeat;
+    background-size: cover;
+}
+#little-cheer-group {
+    background: url("/img/main/54177e000e0b4image.jpg") center no-repeat;
+    background-size: cover;
+}
+.teamsList-title {
+    padding: 0;
+}
+.teamsList-title, .teamsList-title div:first-child {
+    height: 5vh;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: Child;
+
+
+}
+.teamsList-title div:first-child {
+    background: url("/img/main/teamsList-title-back.png") left no-repeat;
+    background-size: cover;
+    padding-left: 5%;
+
+}
+.teamsList div {
+    background-size: contain;
+}
+@media screen and (max-width: 1100px) {
+    .teamsList div {
+        height: 40vh;
+        margin-bottom: 10px;
+    }
+    .teamsList-title div:first-child {
+
+    }
+}
+
 /********** Coaches   ***************/
 .coaches {
-    background: url("../img/coache-banner.png") no-repeat top;
+    background: url("/img/coache-banner.png") no-repeat top;
     background-size: contain;
-    height: 400px;
+    min-height: 400px;
     padding: 0;
 }
 
@@ -271,7 +358,6 @@ h2 {
     text-align: center;
 }
 #coach-1 a, #coach-2 a {
-    font-family: Bobz;
     text-decoration: none;
     color: white;
     font-size: 24px;
@@ -283,6 +369,15 @@ h2 {
     font-family: Arial;
     font-size: 14px;
     text-align: justify;
+}
+
+@media screen and (max-width: 1100px) {
+    .coach-status {
+        font-size: 25px;
+    }
+    .coach-name {
+        font-size: 35px;
+    }
 }
 
 /*************  cheers-UA  ***********/
@@ -298,58 +393,37 @@ h2 {
     padding-top: 15vh;
 }
 @media screen and (max-width: 1100px) {
-    .cheers-UA p{
-        font-size: 16px;
+    .cheers-UA {
+        min-height: 400px;
     }
-}
+    .cheers-UA p{
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: justify;
 
-
-
-.post-news {
-    background-color: white;
-    color: black;
-}
-.post-news h3 {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 15px 0;
-}
-.li-post {
-    padding: 10% 10%;
-    float: left;
-
-    width: 20%;
-}
-/******     SPONSORS          *******/
-.sponsors {
-  /*  background: url("/img/main/sponsors.png") center no-repeat;
-    background-size: contain;*/
-}
-.sponsors a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    padding: 2vh 5vh 2vh 10vh;
-    background: url("/img/main/sponsors.png") center no-repeat;
-    background-size: contain;
-    font-weight: 800;
-}
-.sponsors a:hover {
-    color: #ffd200;
-    background: url("/img/main/sponsors-hover.png") center no-repeat;
-    background-size: contain;
+    }
+    .cheers-UA img {
+        margin-top: 200px;
+    }
+    .cheers-UA div {
+        padding-top: 4vh;
+    }
 }
 /*********** Achievements   **************/
 .achievements-block {
-    background: url("/img/480424.jpg") center no-repeat;
+    background: url("/img/480424.jpg") bottom no-repeat;
     background-size: cover;
+    min-height: 80vh;
+
 }
 .achievements-block-back {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -20px;
+    min-height: 80vh;
 }
 .achievements-block img{
     margin: 5vh 0;
+
 }
 .achievements {
     text-align: center;
@@ -358,30 +432,47 @@ h2 {
     color: white;
     font-size: 18px;
     padding: 5vh;
-}
-.achiev-border {
-    border: 2px solid white;
-    border-radius: 50px;
 
-    text-align: center;
-    padding: 4vh;
-    width: 28%;
-    margin-left: 35%;
 }
+
 @media screen and (max-width: 1100px) {
     .achiev-border{
         border: none;
     }
+    .achievements {
+        font-size: 24px;
+    }
+    .achievements-block,.achievements-block-back {
+        min-height: 400px;
+    }
 }
-/********* SPONSORS       **********/
+/******     SPONSORS          *******/
+.sponsors {
+    /*  background: url("/img/main/sponsors.png") center no-repeat;
+      background-size: contain;*/
+}
 .sponsors a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 2vh 5vh 2vh 10vh;
+    background: url("/img/main/sponsors.png") center no-repeat;
+    background-size: 100% 100%;
+    font-weight: 800;
     margin-top: 3vh;
 }
+.sponsors a:hover {
+    color: #ffd200;
+    background: url("/img/main/sponsors-hover.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
 @media screen and (max-width: 1100px) {
     .sponsors a{
 
         padding: 5vh;
         background-position: center;
+        font-size: 25px;
     }
 }
 
@@ -390,33 +481,51 @@ h2 {
     min-height: 100vh;
     width: 100vw;
 }
+@media screen and (max-width: 1100px) {
+    .gallery {
+        min-height: 200px;
+    }
+    .vk {
+        display: none;
+    }
+}
 /****** CONTACTS BLOCK **************/
 .contacts {
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
 }
 .map-block {
-    height: 80vh;
+    min-height: 80vh;
 }
 .contacts-content {
     background: url("/img/main/contacts-back.png") center no-repeat;
     background-size: contain;
-    height: 80vh;
+    min-height: 80vh;
     padding-top: 15vh;
     color: black;
     font-size: larger;
 }
+@media screen and (max-width: 1100px) {
+    .contacts,.map-block, .map-block iframe, .contacts-content {
+        min-height: 400px;
+    }
+    .contacts-content {
+        padding-top: 5vh;
+        font-size: 25px;
+    }
+    .map-block iframe {
+        margin-bottom: 5px;
+    }
+
+}
 
 
 /****** BOTTOM SOCIAL BLOCK  ********/
-#bottom {
-    height: 81vh;
-    display: block;
-}
+
 .social-icons {
     background: black;
     color: white;
-    height: 7vh;
+
 }
 #social-title {
     font-family: Child;
@@ -426,7 +535,7 @@ h2 {
     margin: 0;
 }
 .social-list  {
-    margin: 3vh 0;
+    margin: 15px 0;
     padding: 0;
 }
 .social-list li{
@@ -447,28 +556,36 @@ h2 {
     margin-top: -2vh;
     padding-right: 1%;
 }
-
+#bottom-form {
+    min-height: 45vh;
+    background: white;
+}
 #bottom-form img{
-    height: 45vh;
+    min-height: 45vh;
+    height: 100%;
     padding: 0;
-
-
 }
-#bottom-post{
 
-}
 @media screen and (max-width: 1100px) {
 
-    .social-list a, .social-list a:visited{
-
-        font-size: 14px;
+    .social-list a {
+        font-size: 25px;
+        margin: 25px 0;
     }
     .icon {
-        height: 4vh;
+        height: 45px;
+        margin: 0;
+    }
+    #bottom-form {
+        min-height: 300px;
+
     }
     #social-title {
-        font-size: 18px;
+        font-size: 40px;
+        margin-top: 50px;
     }
+
+
 }
 
 /********  POST - CONTENT    *******/
@@ -498,6 +615,7 @@ h2 {
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: 900;
+    text-align: center;
 }
 #post-content a:hover {
     background: #ffd200;
@@ -505,23 +623,32 @@ h2 {
     font-weight: 900;
 }
 /* #bottom-form p {*/
-   /* background: rgba(168, 168, 168, 0.7);
-    padding: 2vh;
-    height: 20vh;
-    color: white;
-    text-align: justify;
-    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+/* background: rgba(168, 168, 168, 0.7);
+ padding: 2vh;
+ height: 20vh;
+ color: white;
+ text-align: justify;
+ box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }*/
 
+@media screen and (max-width: 1100px) {
+    #post-content {
+        font-size: 24px;
+        padding: 10px;
+        height: 275px;
+    }
+    #post-content a {
+        top: 60px;
+    }
+}
 
 
 
-
-
+/************ subscribe **************/
 
 .subscribe {
     padding: 3vh 0 0;
-    height: 25vh;
+    min-height: 25vh;
 }
 .subscribe__title {
     color: #fff;
@@ -581,7 +708,11 @@ h2 {
     border: 0;
     outline: none;
 }
-
+@media screen and (max-width: 1100px) {
+    .subscribe {
+        min-height: 100px;
+    }
+}
 
 
 /* Footer */
@@ -603,4 +734,8 @@ h2 {
     font-weight: 800;
     padding-bottom: 5px;
 }
-
+@media screen and (max-width: 1100px) {
+    .footer-info ul {
+        font-size: 18px;
+    }
+}

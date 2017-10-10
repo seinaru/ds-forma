@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title><?php Model::getTitle(); ?></title>
+	<title>Танцевальная студия "Форма"</title>
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -18,20 +18,24 @@
 	<header>
 		<div class="wrapper">
 			<div class="header-top">
-				<img src="../../img/logo-white.png">
+				<img src="/img/logo-white.png">
 				<span style="font-weight: 800;"><i>Dance Studio</i></span>
 				<a style="float: right; padding-top: 0.5%;">войти</a>
 			</div>
 
 		</div>
 		<nav>
-			<div class="wrapper" id="cover-text">
+			<div class="wrapper cover-text" id="cover-text">
 				<ul>
-					<li>Новости</li>
-					<li>Видео</li>
-					<li>Фото</li>
-					<li>Команда</li>
-					<li><a href="#bottom">Контакты</a></li>
+					<li>
+						<a href="https://vk.com/ds.forma">Новости</a>
+					</li>
+					<li>
+						<a href="https://vk.com/videos-42691763">Видео</a></li>
+					<li>
+						<a href="https://www.facebook.com/pg/forma.ds/photos/">Фото</a></li>
+					<li><a href="#coaches">Команда</a></li>
+					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -50,8 +54,8 @@
 				<div>
 					<ul>
 						<li>Телефон:</li>
-						<li>+38 (777) 777 77 77</li>
-						<li>+38 (777) 777 77 77</li>
+						<li>+38 (096) 700 65 25</li>
+
 					</ul>
 				</div>
 				<div>
@@ -65,7 +69,7 @@
 				<div>
 					<ul>
 						<li>Email:</li>
-						<li>forma@forma.com</li>
+						<li>formasportclub@gmail.com</li>
 					</ul>
 				</div>
 			</div>
